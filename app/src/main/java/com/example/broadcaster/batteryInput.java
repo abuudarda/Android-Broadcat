@@ -19,7 +19,9 @@ ActivityBatteryInputBinding binding;
         binding.batGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(batteryInput.this,)
+                Intent intent = new Intent(batteryInput.this,batteryShower.class);
+                intent.putExtra("percentage",binding.batInp.getText().toString());
+                startActivity(intent);
             }
         });
     }
