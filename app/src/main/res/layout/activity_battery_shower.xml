@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".batteryInput">
+    tools:context=".batteryShower">
 
-    <EditText
-        android:id="@+id/batInp"
+    <TextView
+        android:id="@+id/userBat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="How much battery ?"
+        android:text="good"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/batGo"
+    <TextView
+        android:id="@+id/asholBat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="GO"
-        app:layout_constraintEnd_toEndOf="@+id/batInp"
-        app:layout_constraintStart_toStartOf="@+id/batInp"
-        app:layout_constraintTop_toBottomOf="@+id/batInp" />
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/userBat"
+        app:layout_constraintStart_toStartOf="@+id/userBat"
+        app:layout_constraintTop_toBottomOf="@+id/userBat" />
 </androidx.constraintlayout.widget.ConstraintLayout>
