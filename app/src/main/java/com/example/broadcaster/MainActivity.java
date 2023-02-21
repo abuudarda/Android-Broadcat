@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String inp = binding.drop.getText().toString();
                 if(inp.equals("Custom broadcast receiver") ) startActivity(new Intent(MainActivity.this, customBCinput.class));
+                if(inp.equals("System battery notification receiver") ) startActivity(new Intent(MainActivity.this, customBCinput.class));
             }
         });
 

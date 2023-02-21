@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Broadcaster"
         tools:targetApi="31">
         <activity
+            android:name=".batteryInput"
+            android:exported="false" />
+        <activity
             android:name=".customBroadcastReciever"
             android:exported="false" />
         <activity
