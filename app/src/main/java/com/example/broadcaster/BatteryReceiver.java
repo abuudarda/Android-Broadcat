@@ -23,7 +23,13 @@ public class BatteryReceiver extends BroadcastReceiver {
         boolean isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING || status == BatteryManager.BATTERY_STATUS_FULL;
 
         // TODO: Implement your logic based on battery level and charging status
-        asholTV.setText("Battery from system = "+level);
+        String s;
+        if(status==1)s="Unknown";
+        else if(status==2)s="Charging";
+        else if(status==3)s="Discharging";
+        else if(status==4)s="Not Charging";
+        else s= "FULL";
+        asholTV.setText("Battery from system = "+level+", "+s);
         userTV.setText("Battery from user = "+BP);
     }
 }
