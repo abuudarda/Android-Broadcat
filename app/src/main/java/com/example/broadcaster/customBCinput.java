@@ -16,8 +16,8 @@ public class customBCinput extends AppCompatActivity {
         binding= ActivityCustomBcinputBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.Broadcast.setOnClickListener(view -> {
-            Intent service = new Intent(customBCinput.this, )
-        });
+//        binding.Broadcast.setOnClickListener(view -> {
+//            Intent service = new Intent(customBCinput.this, )
+//        });
     }
 }
