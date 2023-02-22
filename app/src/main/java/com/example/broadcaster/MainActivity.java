@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String inp = binding.drop.getText().toString();
                 if(inp.equals("Custom broadcast receiver") ) startActivity(new Intent(MainActivity.this, customBCinput.class));
                 if(inp.equals("System battery notification receiver") ) startActivity(new Intent(MainActivity.this, batteryInput.class));
+                if(inp.equals("Wifi RTT state change receiver") ) startActivity(new Intent(MainActivity.this, wifiPage.class));
             }
         });
 
